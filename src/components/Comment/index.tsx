@@ -108,13 +108,13 @@ export const Comment = ({
               {textContent}
             </EditArea>
           ) : (
-            <Text role="comment">
+            <Text>
               {comment?.replyingTo && <strong>@{comment?.replyingTo}</strong>}{" "}
               {textContent}
             </Text>
           )}
 
-          <ButtonScore role="scores">
+          <ButtonScore>
             <button onClick={addScore}>
               <img src={icon_plus} alt="add" />
             </button>
@@ -144,11 +144,7 @@ export const Comment = ({
                   </ButtonEdit>
                 </CurrentButton>
               ) : (
-                <ButtonReply
-                  type="button"
-                  onClick={replyComment}
-                  role="replyButton"
-                >
+                <ButtonReply type="button" onClick={replyComment}>
                   <img src={icon_reply} alt={"reply" + comment.id} />
                   <span>Reply</span>
                 </ButtonReply>
