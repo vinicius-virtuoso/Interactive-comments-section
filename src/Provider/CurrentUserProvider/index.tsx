@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from "react";
-import data from "../../data.json";
+import { data } from "../../data/data";
 
 interface CurrentUserProps {
   id: number;

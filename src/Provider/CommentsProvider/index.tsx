@@ -6,7 +6,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import data from "../../data.json";
+import { data } from "../../data/data";
 import { CommentProps } from "../../Interfaces/types";
 
 interface ChildrenProps {
