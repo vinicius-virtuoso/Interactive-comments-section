@@ -10,6 +10,7 @@ import {
   Text,
   EditArea,
   ButtonUpdate,
+  HeaderComment,
 } from "./styles";
 import icon_plus from "../../assets/icon-plus.svg";
 import icon_minus from "../../assets/icon-minus.svg";
@@ -83,7 +84,7 @@ export const Comment = ({
     <>
       <ContainerComment animate={{ y: 0, opacity: 1 }} variants={item}>
         <Card>
-          <header>
+          <HeaderComment>
             <img
               src={comment?.user?.image?.png}
               alt={comment?.user?.username}
@@ -95,7 +96,7 @@ export const Comment = ({
               )}
             </strong>
             <span>{comment?.createdAt}</span>
-          </header>
+          </HeaderComment>
           {editText ? (
             <EditArea
               name="edit"
@@ -107,13 +108,13 @@ export const Comment = ({
               {textContent}
             </EditArea>
           ) : (
-            <Text>
+            <Text role="comment">
               {comment?.replyingTo && <strong>@{comment?.replyingTo}</strong>}{" "}
               {textContent}
             </Text>
           )}
 
-          <ButtonScore>
+          <ButtonScore role="scores">
             <button onClick={addScore}>
               <img src={icon_plus} alt="add" />
             </button>
@@ -130,7 +131,7 @@ export const Comment = ({
               {comment?.user?.username === userCurrent.username ? (
                 <CurrentButton>
                   <ButtonDelete type="button" onClick={modalOpen}>
-                    <img src={icon_delete} alt="delete" />
+                    <img src={icon_delete} alt={"delete" + comment.id} />
                     <span>Delete</span>
                   </ButtonDelete>
 
@@ -138,12 +139,16 @@ export const Comment = ({
                     type="button"
                     onClick={() => setEditText(!editText)}
                   >
-                    <img src={icon_edit} alt="edit" />
+                    <img src={icon_edit} alt={"edit" + comment.id} />
                     <span>Edit</span>
                   </ButtonEdit>
                 </CurrentButton>
               ) : (
-                <ButtonReply type="button" onClick={replyComment}>
+                <ButtonReply
+                  type="button"
+                  onClick={replyComment}
+                  role="replyButton"
+                >
                   <img src={icon_reply} alt={"reply" + comment.id} />
                   <span>Reply</span>
                 </ButtonReply>

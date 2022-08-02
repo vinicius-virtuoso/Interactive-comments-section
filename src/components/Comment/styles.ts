@@ -19,37 +19,6 @@ export const Card = styled(motion.div)`
   gap: 0.8rem;
   background: var(--White);
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    font-size: 1rem;
-    grid-area: headerUser;
-
-    img {
-      height: 2rem;
-      width: 2rem;
-    }
-
-    strong {
-      color: var(--Dark-blue);
-
-      span {
-        color: var(--White);
-        margin: 0.2rem 0.3rem;
-        background: var(--Moderate-blue);
-        font-weight: 500;
-        padding: 0rem 0.4rem;
-        border-radius: 0.15rem;
-      }
-    }
-
-    span {
-      color: var(--Grayish-Blue);
-    }
-  }
-
   @media (min-width: 768px) {
     padding: 1.5rem 2rem;
     display: grid;
@@ -57,10 +26,42 @@ export const Card = styled(motion.div)`
       "score headerUser buttons"
       "score comment comment";
 
-    header {
-      grid-area: headerUser;
-    }
     grid-template-columns: 48px 1fr;
+  }
+`;
+
+export const HeaderComment = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  grid-area: headerUser;
+
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  strong {
+    color: var(--Dark-blue);
+
+    span {
+      color: var(--White);
+      margin: 0.2rem 0.3rem;
+      background: var(--Moderate-blue);
+      font-weight: 500;
+      padding: 0rem 0.4rem;
+      border-radius: 0.15rem;
+    }
+  }
+
+  span {
+    color: var(--Grayish-Blue);
+  }
+
+  @media (min-width: 768px) {
+    grid-area: headerUser;
   }
 `;
 
