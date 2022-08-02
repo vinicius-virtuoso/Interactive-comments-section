@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const ContainerCard = styled(motion.div)`
+export const ContainerCard = styled(motion.li)`
   width: 100%;
   height: auto;
   display: flex;

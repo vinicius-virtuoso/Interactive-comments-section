@@ -144,7 +144,7 @@ export const Comment = ({
                 </CurrentButton>
               ) : (
                 <ButtonReply type="button" onClick={replyComment}>
-                  <img src={icon_reply} alt="reply" />
+                  <img src={icon_reply} alt={"reply" + comment.id} />
                   <span>Reply</span>
                 </ButtonReply>
               )}

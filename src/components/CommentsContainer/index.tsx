@@ -50,14 +50,15 @@ export const CommentsContainer = ({
           <motion.ul variants={container} initial="hidden" animate="visible">
             {repliesUser &&
               repliesUser.map((reply) => (
-                <Comment
-                  key={reply.id}
-                  comment={reply}
-                  item={item}
-                  replies={repliesUser}
-                  setReplies={setRepliesUser}
-                  isReply
-                />
+                <li key={reply.id}>
+                  <Comment
+                    comment={reply}
+                    item={item}
+                    replies={repliesUser}
+                    setReplies={setRepliesUser}
+                    isReply
+                  />
+                </li>
               ))}
           </motion.ul>
         </ReplyContainer>

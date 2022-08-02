@@ -50,6 +50,9 @@ const GlobalStyle = createGlobalStyle`${css`
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+  ul {
+    list-style-type: none;
+  }
 `}
 `;
 
