@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive comments section
+# Seção de comentários interativos
 
 ![Design preview for the Interactive comments section coding challenge](./design/desktop-preview.jpg)
 
