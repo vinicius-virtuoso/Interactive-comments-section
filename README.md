@@ -3,7 +3,7 @@
 <br/>
 <div align="center">
 
-  <img src="./preview/logo.svg" width="400" alt="Seção de comentários interativos">
+  <img src="./preview/logo.png" width="400" alt="Seção de comentários interativos">
 
 <br/></div>
 
