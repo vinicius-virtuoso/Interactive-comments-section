@@ -1,5 +1,3 @@
-# Seção de comentários interativos
-
 <br/>
 <div align="center">
 
