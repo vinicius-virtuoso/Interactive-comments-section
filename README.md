@@ -10,15 +10,15 @@
 
 Essa é uma Seção de comentários interativos onde o intuito do projeto é o usuario poder comentar e responder comentarios além de ter um crud simples no frontend. 
 
-## Oque implementei a mais do projeto inicial:
-- [x] Versão mobile com menu
+## Oque implementei:
+- [x] Versão mobile
 - [x] Usuario pode criar novo topico
 - [x] Usuario pode responder outos comentarios
 - [x] Usuario pode editar suas respostas
 - [x] Usuario pode apagar sua respostas
 
 
-#### Veja o projeto online: https://ignite-lab-2022-lemon.vercel.app
+#### Veja o projeto online: https://interactive-comments-section-six.vercel.app/
 
 
 ## 🛠 Tecnologias utilizadas
